@@ -31,7 +31,6 @@
     color: #fff !important;
   }
 
-  /* PlainAdmin primary-btn */
   .primary-btn {
     background-color: #2E8B57 !important;
     border-color: #2E8B57 !important;
@@ -68,7 +67,7 @@
             </a>
           </li>
                     <li class="nav-item mb-2">
-            <a href="invoice.html">
+            <a href="<?= base_url('admin/data_pegawai') ?>">
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
               <span class="text">Data Pegawai</span>
             </a>
@@ -241,12 +240,7 @@
           <div class="row">
             <div class="col-md-6 order-last order-md-first">
               <div class="copyright text-center text-md-start">
-                <p class="text-sm">
-                  Designed and Developed by
-                  <a href="https://plainadmin.com" rel="nofollow" target="_blank">
-                    PlainAdmin
-                  </a>
-                </p>
+                
               </div>
             </div>
             <!-- end col-->

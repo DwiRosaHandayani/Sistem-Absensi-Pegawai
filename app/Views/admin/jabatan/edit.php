@@ -6,6 +6,8 @@
     <div class="card-body">
         <form method="POST" action="<?= base_url('admin/jabatan/update/' . $jabatan['id']) ?>">
 
+           <?= csrf_field() ?>
+
     <div class="input-style-1">
         <label>Nama Jabatan</label>
               <input type="text" class="form-control <?= ($validation->hasError ('jabatan')) ? 'is-invalid' : '' ?>" name="jabatan" placeholder="Nama jabatan" value="<?= $jabatan['jabatan'] ?>" />

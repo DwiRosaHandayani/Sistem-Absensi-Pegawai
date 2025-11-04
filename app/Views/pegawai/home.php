@@ -27,8 +27,12 @@
             <div>:</div>
             <div id="detik-masuk"></div>
           </div>
-          <form action=""></form>
-          <button class="btn btn-primary mt-3" style="background-color: #2E8B57; border-color: #2E8B57; color: white;">Masuk</button>
+          <form method="POST" action="<?= base_url('pegawai/presensi_masuk') ?>">
+            <input type="text" name="tanggal_masuk" value="<?= date('y-m-d')?>">
+            <input type="text" name="jam_masuk" value="<?= date('H:i:s')?>">
+            <input type="text" name="id_pegawai" value="<?= session()->get('id_pegawai')?>"> 
+            <button class="btn btn-primary mt-3" style="background-color: #2E8B57; border-color: #2E8B57; color: white;">Masuk</button>
+          </form>
         </div>
       </div>
   </div>

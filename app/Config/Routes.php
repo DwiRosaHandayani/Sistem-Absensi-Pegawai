@@ -23,6 +23,17 @@ $routes->post('admin/lokasi_presensi/store', 'Admin\LokasiPresensi::store', ['fi
 $routes->get('admin/lokasi_presensi/edit/(:segment)', 'Admin\LokasiPresensi::edit/$1', ['filter' => 'adminFilter']);
 $routes->post('admin/lokasi_presensi/update/(:segment)', 'Admin\LokasiPresensi::update/$1', ['filter' => 'adminFilter']);
 $routes->get('admin/lokasi_presensi/delete/(:segment)', 'Admin\LokasiPresensi::delete/$1', ['filter' => 'adminFilter']);
+$routes->get('admin/lokasi_presensi/detail/(:segment)', 'Admin\LokasiPresensi::detail/$1', ['filter' => 'adminFilter']);
+
+$routes->get('admin/data_pegawai', 'Admin\DataPegawai::index', ['filter' => 'adminFilter']);
+$routes->get('admin/data_pegawai/create', 'Admin\DataPegawai::create', ['filter' => 'adminFilter']);
+$routes->post('admin/data_pegawai/store', 'Admin\DataPegawai::store', ['filter' => 'adminFilter']);
+$routes->get('admin/data_pegawai/edit/(:segment)', 'Admin\DataPegawai::edit/$1', ['filter' => 'adminFilter']);
+$routes->post('admin/data_pegawai/update/(:segment)', 'Admin\DataPegawai::update/$1', ['filter' => 'adminFilter']);
+$routes->get('admin/data_pegawai/delete/(:segment)', 'Admin\DataPegawai::delete/$1', ['filter' => 'adminFilter']);
+$routes->get('admin/data_pegawai/detail/(:segment)', 'Admin\DataPegawai::detail/$1', ['filter' => 'adminFilter']);
+
 
 $routes->get('pegawai/home', 'Pegawai\Home::index', ['filter' => 'pegawaiFilter']);
+$routes->post('pegawai/presensi_masuk', 'Pegawai\Home::presensi_masuk', ['filter' => 'pegawaiFilter']);
 
